@@ -1,0 +1,59 @@
+---
+output:
+  rmarkdown::github_document:
+    html_preview: no
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(fig.path = "man/figures/README-", fig.align = "center")
+```
+
+<!--- README.md is generated from README.Rmd. Please edit that file -->
+
+# Tiles for visualizing large spatial data
+
+[![Project Status: WIP - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip)
+[![Travis Build Status](https://img.shields.io/travis/jeffreyhanson/tiler/master.svg?label=Mac%20OSX%20%26%20Linux)](https://travis-ci.org/jeffreyhanson/tiler)
+[![AppVeyor Build Status](https://img.shields.io/appveyor/ci/jeffreyhanson/tiler/master.svg?label=Windows)](https://ci.appveyor.com/project/jeffreyhanson/tiler)
+[![Coverage Status](https://codecov.io/github/jeffreyhanson/tiler/coverage.svg?branch=master)](https://codecov.io/github/jeffreyhanson/tler?branch=master)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/tiler)](https://CRAN.R-project.org/package=tiler)
+
+
+_tiler_ is an _R_ package for creating tiles to render large spatial data sets.
+
+## Installation
+
+First, _python_ 2.7 needs to be installed on the system. Next, you need to install the _gdal python_ package. To achieve this, run the following code in the terminal:
+
+
+```{bash, eval = FALSE}
+sudo apt-add-repository ppa:ubuntugis/ubuntugis-unstable
+sudo apt-get update
+sudo apt-get install gdal-bin libgdal-dev libgdal1i
+sudo pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
+```
+
+Now, the _tiler R_ package can be installed using the _R_ code:
+
+```{r, eval = FALSE}
+if (!require(devtools))
+  install.packages("devtools")
+devtools::install_github("jeffreyhanson/tiler")
+```
+
+## Citation
+
+```{r, echo  = FALSE, result = "asis", comment = ""}
+cat(paste0("Hanson JO (2017) tiler: Tiles for mapping large spatial data. R package version ",packageDescription("tiler")$Version,". https://github.com/jeffreyhanson/tiler.\n"))
+```
+
+## Example usage
+
+Here we will provide an example of using this package to create tiles for visualizing a data set. First, we will load the _tiler_ package.
+
+```{r, eval = FALSE}
+# load package
+library(tiler)
+```
+
+

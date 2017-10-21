@@ -1,0 +1,34 @@
+Package: tiler
+Type: Package
+Version: 0.0.0.1
+Title: Tiles for visualizing large spatial data
+Description: Create tiles for visualizing large spatial data sets,
+Authors@R: c(person(c('Jeffrey', 'O'), 'Hanson',
+               email='jeffrey.hanson@uqconnect.edu.au', role = c('aut', 'cre')))
+Imports:
+    tools,
+    assertthat,
+    leaflet,
+    withr,
+    parallel
+Suggests:
+    testthat,
+    knitr,
+    roxygen2,
+    rmarkdown,
+    mapmisc
+Depends:
+    R(>= 3.4.1),
+    raster,
+    sp
+License: MIT + file
+LazyData: true
+SystemRequirements: Python (>= 2.7), GDAL
+URL: https://github.com/jeffreyhanson/tiler
+BugReports: https://github.com/jeffreyhanson/tiler/issues
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Collate:
+    'create_tiles.R'
+    'internal.R'
+    'package.R'
