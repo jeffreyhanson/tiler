@@ -1,6 +1,6 @@
 Package: tiler
 Type: Package
-Version: 0.0.0.3
+Version: 0.0.0.4
 Title: Tiles for visualizing large spatial data
 Description: Create tiles for visualizing large spatial data sets in leaflet
     or shiny applications. Note that this package requires python (version 2.7)
@@ -18,7 +18,8 @@ Suggests:
     knitr,
     roxygen2,
     rmarkdown,
-    mapmisc
+    mapmisc,
+    rgdal
 Depends:
     R(>= 3.4.1),
     raster,

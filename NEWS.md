@@ -1,3 +1,7 @@
+# tiler 0.0.0.4 (unreleased)
+
+- Add _rgdal_ to Suggests.
+
 # tiler 0.0.0.3 (unreleased)
 
 - Remove _withr_ dependency.
