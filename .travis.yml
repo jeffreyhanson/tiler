@@ -30,6 +30,7 @@ apt_packages:
   - qpdf
   - gdal-bin
   - r-cran-rgdal
+  - r-cran-rgeos
 
 before_install:
   - echo "TRAVIS_OS_NAME = $TRAVIS_OS_NAME"
