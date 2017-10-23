@@ -23,7 +23,9 @@ env:
 
 apt_packages:
   - libgeos-dev
-  - libgeos-c1
+  - libgeos-c1v5
+  - libspatialite-dev
+  - libgdal1h
   - libproj-dev
   - libgdal-dev
   - curl
