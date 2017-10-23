@@ -59,4 +59,4 @@ Note that we set the argument `output_dir` to a temporary directory. For real-wo
 Citation
 --------
 
-    Hanson JO (2017) tiler: Tiles for mapping large spatial data. R package version 0.0.0.2. https://github.com/jeffreyhanson/tiler.
+    Hanson JO (2017) tiler: Tiles for mapping large spatial data. R package version 0.0.0.3. https://github.com/jeffreyhanson/tiler.

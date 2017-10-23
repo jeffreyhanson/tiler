@@ -1,3 +1,8 @@
+# tiler 0.0.0.3 (unreleased)
+
+- Remove _withr_ dependency.
+- Add more comprehensive tests for `tiles`.
+
 # tiler 0.0.0.2 (unreleased)
 
 - Fix LICENSE.

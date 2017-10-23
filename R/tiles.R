@@ -130,7 +130,7 @@ tiles.RasterLayer <- function(x, output_dir, colors = "Spectral",
                 " -w none --processes=", threads,
                 ifelse(verbose, " --verbose", ""), " \"", path, "\" \"",
                 output_dir, "/tiles\"")
-  withr::with_dir(output_dir, res <- system(cmd))
+  res <- system(cmd)
   if (!identical(res, 0L))
     stop("tile processing failed.")
   # delete raster data from disk
