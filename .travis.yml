@@ -26,6 +26,7 @@ apt_packages:
   - libgdal-dev
   - curl
   - qpdf
+  - gdal-bin
   - r-cran-rgdal
 
 before_install:
@@ -35,7 +36,7 @@ before_install:
   - if [ "$TRAVIS_OS_NAME" == "linux" ]; then sudo apt-get install -y; fi;
   - if [ "$TRAVIS_OS_NAME" == "linux" ]; then sudo apt-add-repository -y ppa:ubuntugis/ubuntugis-unstable; fi;
   - if [ "$TRAVIS_OS_NAME" == "linux" ]; then sudo apt-get update; fi;
-  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then sudo apt-get install gdal-bin python-gdal; fi;
+  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then sudo apt-get install python-gdal; fi;
 
 r_packages:
   - covr
