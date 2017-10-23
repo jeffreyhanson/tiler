@@ -3,7 +3,7 @@
 Tiles for visualizing large spatial data
 ========================================
 
-[![Project Status: WIP - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip) [![Travis Build Status](https://img.shields.io/travis/jeffreyhanson/tiler/master.svg?label=Mac%20OSX%20%26%20Linux)](https://travis-ci.org/jeffreyhanson/tiler) [![Coverage Status](https://codecov.io/github/jeffreyhanson/tiler/coverage.svg?branch=master)](https://codecov.io/github/jeffreyhanson/tler?branch=master) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/tiler)](https://CRAN.R-project.org/package=tiler)
+[![Project Status: WIP - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip) [![Travis Build Status](https://img.shields.io/travis/jeffreyhanson/tiler/master.svg?label=build)](https://travis-ci.org/jeffreyhanson/tiler) [![Coverage Status](https://codecov.io/github/jeffreyhanson/tiler/coverage.svg?branch=master)](https://codecov.io/github/jeffreyhanson/tler?branch=master) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/tiler)](https://CRAN.R-project.org/package=tiler)
 
 The *tiler R* package can be used to render spatial data sets as [tiles](https://en.wikipedia.org/wiki/Tile_Map_Service). The advantage of rendering spatial data as tiles for use in web applications is that the tile format reduces the amount of data that users need to download to view the data.
 

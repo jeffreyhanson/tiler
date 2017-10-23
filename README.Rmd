@@ -13,7 +13,7 @@ knitr::opts_chunk$set(fig.path = "man/figures/README-", fig.align = "center")
 # Tiles for visualizing large spatial data
 
 [![Project Status: WIP - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip)
-[![Travis Build Status](https://img.shields.io/travis/jeffreyhanson/tiler/master.svg?label=Mac%20OSX%20%26%20Linux)](https://travis-ci.org/jeffreyhanson/tiler)
+[![Travis Build Status](https://img.shields.io/travis/jeffreyhanson/tiler/master.svg?label=build)](https://travis-ci.org/jeffreyhanson/tiler)
 [![Coverage Status](https://codecov.io/github/jeffreyhanson/tiler/coverage.svg?branch=master)](https://codecov.io/github/jeffreyhanson/tler?branch=master)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/tiler)](https://CRAN.R-project.org/package=tiler)
 

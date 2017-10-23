@@ -26,6 +26,7 @@ apt_packages:
   - libgdal-dev
   - curl
   - qpdf
+  - libgdal1h
   - gdal-bin
   - r-cran-rgdal
 
@@ -50,5 +51,3 @@ notifications:
   email:
     on_success: change
     on_failure: change
-
-    
