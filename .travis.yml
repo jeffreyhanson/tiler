@@ -28,7 +28,6 @@ apt_packages:
   - libgdal-dev
   - curl
   - qpdf
-  - gdal-bin
   - r-cran-rgdal
   - r-cran-rgeos
 
