@@ -1,6 +1,7 @@
 context("tiles")
 
 test_that("tiles", {
+  skip_on_cran()
   # load data
   data(netherlands, package = "mapmisc")
   # create folder to save tiles
@@ -11,6 +12,7 @@ test_that("tiles", {
 })
 
 test_that("tiles (parallel)", {
+  skip_on_cran()
   # load data
   data(netherlands, package = "mapmisc")
   # create folder to save tiles

@@ -94,7 +94,7 @@
 <span class='co'># S3 method for RasterLayer</span>
 <span class='fu'>tiles</span>(<span class='no'>x</span>, <span class='no'>output_dir</span>, <span class='kw'>colors</span> <span class='kw'>=</span> <span class='st'>"Spectral"</span>,
   <span class='kw'>zoom</span> <span class='kw'>=</span> <span class='st'>"5-16"</span>, <span class='kw'>threads</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>project</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
-  <span class='kw'>cache</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>shiny</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
+  <span class='kw'>cache</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>shiny</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
     <table class="ref-arguments">
@@ -123,6 +123,11 @@ Defaults to <code>"Spectral"</code>.</p></td>
       <td><p><code>character</code> Zoom levels to render. The levels can be
 specified as a single number (e.g <code>"10"</code>) or as a range
 (e.g. <code>"1-10"</code>). Defaults to <code>"5-16"</code>.</p></td>
+    </tr>
+    <tr>
+      <th>threads</th>
+      <td><p><code>numeric</code> number of threads to use for processing.
+Defaults to 1.</p></td>
     </tr>
     <tr>
       <th>project</th>
@@ -168,7 +173,9 @@ applications?</p></td>
     <pre class="examples"><div class='input'><span class='co'># load leafleat</span>
 <span class='fu'>library</span>(<span class='no'>leaflet</span>)
 
+<span class='co'># load example data set</span>
 <span class='fu'>data</span>(<span class='no'>netherlands</span>, <span class='kw'>package</span> <span class='kw'>=</span> <span class='st'>"mapmisc"</span>)
+
 
 <span class='co'># create leaflet map and visualize data using tiles</span>
 <span class='no'>map</span> <span class='kw'>&lt;-</span> <span class='fu'>leaflet</span>() <span class='kw'>%&gt;%</span>
@@ -179,7 +186,10 @@ applications?</p></td>
                 <span class='kw'>options</span> <span class='kw'>=</span> <span class='fu'>tileOptions</span>(<span class='kw'>minZoom</span> <span class='kw'>=</span> <span class='fl'>5</span>, <span class='kw'>maxZoom</span> <span class='kw'>=</span> <span class='fl'>16</span>,
                                       <span class='kw'>tms</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)) <span class='kw'>%&gt;%</span>
        <span class='fu'>addLayersControl</span>(<span class='kw'>baseGroups</span> <span class='kw'>=</span> <span class='st'>"Basemap"</span>, <span class='kw'>overlayGroups</span> <span class='kw'>=</span> <span class='st'>"Elevation"</span>,
-                        <span class='kw'>options</span> <span class='kw'>=</span> <span class='fu'>layersControlOptions</span>(<span class='kw'>collapsed</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>))</div></pre>
+                        <span class='kw'>options</span> <span class='kw'>=</span> <span class='fu'>layersControlOptions</span>(<span class='kw'>collapsed</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>))
+
+<span class='co'># render map</span>
+<span class='fu'>print</span>(<span class='no'>map</span>)</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

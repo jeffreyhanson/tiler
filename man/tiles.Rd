@@ -63,8 +63,10 @@ This function creates a tile layer, following the
 # load leafleat
 library(leaflet)
 
+# load example data set
 data(netherlands, package = "mapmisc")
 
+\donttest{
 # create leaflet map and visualize data using tiles
 map <- leaflet() \%>\%
        setView(lng = 5.75560, lat = 50.94723, zoom = 12) \%>\%
@@ -76,7 +78,8 @@ map <- leaflet() \%>\%
        addLayersControl(baseGroups = "Basemap", overlayGroups = "Elevation",
                         options = layersControlOptions(collapsed = FALSE))
 
-\donttest{
+# render map
+print(map)
 }
 }
 \seealso{

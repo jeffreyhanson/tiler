@@ -46,9 +46,10 @@
 #' # load leafleat
 #' library(leaflet)
 #'
-# # load example data set
+#' # load example data set
 #' data(netherlands, package = "mapmisc")
 #'
+#' \donttest{
 #' # create leaflet map and visualize data using tiles
 #' map <- leaflet() %>%
 #'        setView(lng = 5.75560, lat = 50.94723, zoom = 12) %>%
@@ -60,9 +61,8 @@
 #'        addLayersControl(baseGroups = "Basemap", overlayGroups = "Elevation",
 #'                         options = layersControlOptions(collapsed = FALSE))
 #'
-#' \donttest{
-# # render map
-# print(map)
+#' # render map
+#' print(map)
 #' }
 #' @export
 tiles <- function(x, ...) UseMethod("tiles")
@@ -125,7 +125,7 @@ tiles.RasterLayer <- function(x, output_dir, colors = "Spectral",
         return(tls)
   # make tiles
   cmd <- paste0("python ",
-                system.file("inst/python/gdal2tiles.py", package = "tiler"),
+                system.file("python", "gdal2tiles.py", package = "tiler"),
                 " -z ", zoom, " -a ", paste(nodata, collapse = ","),
                 " -w none --processes=", threads,
                 ifelse(verbose, " --verbose", ""), " \"", path, "\" \"",
