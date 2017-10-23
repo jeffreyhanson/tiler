@@ -10,7 +10,7 @@ warnings_are_errors: true
 
 r:
   - release
-  - devel
+  # - devel
 
 r_build_args: --no-build-vignettes
 
