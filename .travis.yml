@@ -22,11 +22,12 @@ env:
     - _R_CHECK_FORCE_SUGGESTS_=FALSE
 
 apt_packages:
+  - libgeos-dev
+  - libgeos-c1
   - libproj-dev
   - libgdal-dev
   - curl
   - qpdf
-  - libgdal1h
   - gdal-bin
   - r-cran-rgdal
 
