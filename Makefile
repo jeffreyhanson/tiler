@@ -1,4 +1,4 @@
-all: clean initc data docs test check
+all: clean docs test check
 
 clean:
 	rm -rf man/*
@@ -6,9 +6,6 @@ clean:
 	rm -rf inst/doc/*
 
 docs: man readme vigns site
-
-data:
-	Rscript --slave inst/extdata/simulate_data.R
 
 man:
 	R --slave -e "devtools::document()"
